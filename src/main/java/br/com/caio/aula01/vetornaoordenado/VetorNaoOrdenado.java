@@ -8,10 +8,6 @@ public class VetorNaoOrdenado {
     private int ultimaPosicao;
     private int[] valores;
 
-    public int getUltimaPosicao() {
-        return ultimaPosicao;
-    }
-
     public VetorNaoOrdenado(int capacidade) {
         this.capacidade = capacidade;
         this.ultimaPosicao = -1;
@@ -62,5 +58,9 @@ public class VetorNaoOrdenado {
             }
             --ultimaPosicao;
         }
+    }
+
+    public int getUltimaPosicao() {
+        return ultimaPosicao;
     }
 }
